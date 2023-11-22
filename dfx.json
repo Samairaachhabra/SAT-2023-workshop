@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "sat2023workshop_backend": {
+      "main": "src/sat2023workshop_backend/main.mo",
+      "type": "motoko"
+    },
+    "sat2023workshop_frontend": {
+      "dependencies": [
+        "sat2023workshop_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/sat2023workshop_frontend/src/index.html"
+      },
+      "source": [
+        "src/sat2023workshop_frontend/assets",
+        "dist/sat2023workshop_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
